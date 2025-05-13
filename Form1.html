@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Driver Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .submit-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+	<p style="text-indent: 30px;">
+	
+			<a href="index.html">Home</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<a href="Table1.html">Table</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<a href="Form1.html">Form</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<a href="https://github.com/lambj7122" target="_blank">GitHub</a>
+	
+		</p>
+
+  <h2>Driver Survey Form</h2>
+
+  <form action="#" method="post">
+    
+    <!-- Type of Driver -->
+    <label for="driverType">Type of Driver:</label>
+    <select id="driverType" name="driverType" required>
+      <option value="">-- Please Select --</option>
+      <option value="Company">Company</option>
+      <option value="Owner Operator">Owner Operator</option>
+    </select>
+
+    <!-- Years with CDL -->
+    <label for="cdlYears">Years with Commercial Driver's License (CDL):</label>
+    <input type="number" id="cdlYears" name="cdlYears" min="0" required>
+
+    <!-- Type of Freight Hauled -->
+    <label for="freightType">Type of Freight Hauled:</label>
+    <select id="freightType" name="freightType" required>
+      <option value="">-- Please Select --</option>
+      <option value="Dry Van">Dry Van</option>
+      <option value="Refrigerated">Refrigerated</option>
+      <option value="Flatbed">Flatbed</option>
+      <option value="Bulk/Tanker">Bulk/Tanker</option>
+    </select>
+
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+
+</body>
+</html>
